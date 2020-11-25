@@ -1,0 +1,24 @@
+.spinner{
+    background-image: url("../../src/icons/Vector.svg");
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.search__voice {
+    // background-image: url("../../src/icons/voice.svg");
+    fill: #ffffff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(85deg) brightness(105%) contrast(101%);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    color: #ff0000;
+    position: absolute;
+    border: none;
+    right: 115px;
+    top: 15px;
+    @include media-mobile {
+        right: 90px;
+    }
+}

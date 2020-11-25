@@ -1,0 +1,66 @@
+.button {
+    @extend %font-add;
+    cursor: pointer;
+    @extend %transition;
+}
+
+.button__submit {
+    width: 101px;
+    height: 44px;
+    background: rgba(174, 181, 185, 0.5);
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #ffff;
+}
+//! APDATE
+
+.button__update {
+    background-image: url("../../src/icons/refresh.svg");
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//! LANGUAGE 
+.button__language {
+    width: 71px;
+    height: 44px;
+    color: #ffff;
+    background: rgba(174, 181, 185, 0.5);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    outline: none;
+}
+
+//! TEMPERATURE
+
+.button__F {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px 0 0 5px;
+    background: rgba(76,82,85,.7);
+    color: hsla(0,0%,100%,.7);
+}
+
+.button__С {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 0 5px 5px 0;
+    background: rgba(76,82,85,.7);
+    color: hsla(0,0%,100%,.7);
+}
+
+.active {
+    background: rgba(174, 181, 185, 0.5);
+    color: #ffff;
+    cursor: pointer; 
+}

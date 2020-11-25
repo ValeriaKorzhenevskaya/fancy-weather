@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: $content-width;
+    margin: auto;
+    background-color: $color-wrapper;
+    padding: 15px;
+    @include media-laptop {
+        padding: 0 46px;
+    }
+    @include media-mobile {
+        padding: 0 21px;
+    }
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

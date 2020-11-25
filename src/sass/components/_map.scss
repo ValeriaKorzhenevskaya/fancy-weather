@@ -1,0 +1,16 @@
+.main__map {
+    margin: 50px 0;
+    max-width: 370px;
+    color: white;
+}
+
+.map {
+    @include media-tablet {
+        max-width: 270px;
+        max-height: 270px;
+    }
+    @include media-mobile {
+        max-width: 270px;
+        max-height: 270px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Fancy Weather</title>
+</head>
+<body id="body">
+    <header class="header">
+        <div class="wrapper">
+            <div class="layout-2-column header__inner">
+
+                <div class="header__tools">
+                    <div class="button button__update" id="spinner">
+                        <div class="spinner"></div>
+                    </div>
+                    <select class=" button button__language">
+                        <option>EN</option>
+                        <option>RU</option>
+                        <option>BE</option>
+                    </select>
+
+                    <div class="header__temperature">
+                        <div class="button button__temperature button__F">°F</div>
+                        <div class="button button__temperature button__С">°С</div>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <form class="search" id="search-form">
+                        <input type="text" class="search__line" id="search-text" autocomplete="off" placeholder="Search city">
+                        <img class="search__voice" src="./icons/voice.svg"></img>
+                        <button class="button button__submit" type="submit">SEARCH</button>
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper" id="main-wrapper">
+            <div class="column">
+
+                <div class="weather-info" id="info">
+                    
+                </div>
+
+                <div class="main__map">
+                    <div id='map' class="map" style='width: 370px; height: 370px; border-radius: 5%;'></div>
+                    <div class="coords" id="coords">
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

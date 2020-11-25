@@ -1,0 +1,19 @@
+.header__tools {
+    display: flex;
+    padding: 40px 0 0 0;
+}
+
+.header__search {
+    padding: 40px 0 0 0;
+}
+
+.header__temperature {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__inner {
+    @include media-mobile {
+        justify-content: center;
+    }
+}
